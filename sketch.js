@@ -48,7 +48,7 @@ function draw() {
   yoff += 0.01;   // 0.01
 if ( keyflag ) {
   yoff += keyflag;
-  keyflag -= 0.002;
+  keyflag -= 0.001;
 
   low += 0.072;
   high -= 0.079;
@@ -85,7 +85,7 @@ function keyPressed() {
 }
 
 function impact() {
-  keyflag = 0.60;
+  keyflag = 0.30;
 
   low = low_init - (low_init*0.03);
   high = high_init + (high_init*0.03);
